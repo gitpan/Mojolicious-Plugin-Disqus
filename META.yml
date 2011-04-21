@@ -1,0 +1,25 @@
+---
+abstract: 'Access Disqus.com API from your Mojolicious apps'
+author:
+  - 'Ben van Staveren <madcat@cpan.org>'
+build_requires:
+  Test::More: 0
+configure_requires:
+  Module::Build: 0.38
+dynamic_config: 1
+generated_by: 'Module::Build version 0.38, CPAN::Meta::Converter version 2.110930'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Mojolicious-Plugin-Disqus
+provides:
+  Mojolicious::Plugin::Disqus:
+    file: lib/Mojolicious/Plugin/Disqus.pm
+    version: 0.01
+requires:
+  Mojolicious: 1.21
+  Net::Disqus: v0.1.3
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.01
