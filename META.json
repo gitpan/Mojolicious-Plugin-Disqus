@@ -34,7 +34,7 @@
    "provides" : {
       "Mojolicious::Plugin::Disqus" : {
          "file" : "lib/Mojolicious/Plugin/Disqus.pm",
-         "version" : "0.01"
+         "version" : "1.19"
       }
    },
    "release_status" : "stable",
@@ -43,5 +43,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "0.01"
+   "version" : "1.19"
 }
