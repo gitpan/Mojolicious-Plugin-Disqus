@@ -1,9 +1,11 @@
 Build.PL
 Changes
-lib/Mojolicious/Plugin/Disqus.pm
-MANIFEST			This list of files
-README
-t/00-load.t
-t/manifest.t
-META.yml
+LICENSE
+MANIFEST
 META.json
+META.yml
+Makefile.PL
+README
+dist.ini
+lib/Mojolicious/Plugin/Disqus.pm
+t/00-load.t

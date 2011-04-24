@@ -1,10 +1,10 @@
 {
-   "abstract" : "Access Disqus.com API from your Mojolicious apps",
+   "abstract" : "Interface with Disqus comments from your Mojolicious app",
    "author" : [
       "Ben van Staveren <madcat@cpan.org>"
    ],
-   "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.110930",
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.200004, CPAN::Meta::Converter version 2.110930",
    "license" : [
       "perl_5"
    ],
@@ -16,32 +16,39 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "Test::More" : 0
+            "Module::Build" : "0.3601"
          }
       },
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.38"
+            "ExtUtils::MakeMaker" : "6.31",
+            "Module::Build" : "0.3601"
          }
       },
       "runtime" : {
          "requires" : {
-            "Mojolicious" : "1.21",
-            "Net::Disqus" : "v0.1.3"
+            "Mojo::Base" : 0,
+            "Net::Disqus" : 0
          }
-      }
-   },
-   "provides" : {
-      "Mojolicious::Plugin::Disqus" : {
-         "file" : "lib/Mojolicious/Plugin/Disqus.pm",
-         "version" : "1.19"
+      },
+      "test" : {
+         "requires" : {
+            "Test::More" : 0
+         }
       }
    },
    "release_status" : "stable",
    "resources" : {
-      "license" : [
-         "http://dev.perl.org/licenses/"
-      ]
+      "bugtracker" : {
+         "web" : "https://github.com/benvanstaveren/Mojolicious-Plugin-Disqus/issues"
+      },
+      "homepage" : "http://xirinet.com/projects/mojolicious-plugin-disqus/",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/benvanstaveren/Mojolicious-Plugin-Disqus.git",
+         "web" : "https://github.com/benvanstaveren/Mojolicious-Plugin-Disqus"
+      }
    },
-   "version" : "1.19"
+   "version" : "1.20"
 }
+

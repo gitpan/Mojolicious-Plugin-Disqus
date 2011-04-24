@@ -1,22 +1,37 @@
+
 use strict;
 use warnings;
-use Module::Build;
 
-my $builder = Module::Build->new(
-    module_name         => 'Mojolicious::Plugin::Disqus',
-    license             => 'perl',
-    dist_author         => q{Ben van Staveren <madcat@cpan.org>},
-    dist_abstract       => 'Access Disqus.com API from your Mojolicious apps',
-    dist_version_from   => 'lib/Mojolicious/Plugin/Disqus.pm',
-    configure_requires => { 'Module::Build' => 0.38 },
-    build_requires => {
-        'Test::More'    => 0,
-    },
-    requires => {
-        'Mojolicious'   =>  '1.21',
-        'Net::Disqus'   =>  '0.1.3',
-    },
-    add_to_cleanup      => [ 'Mojolicious-Plugin-Disqus-*' ],
+use Module::Build 0.3601;
+
+
+my %module_build_args = (
+  'build_requires' => {
+    'Module::Build' => '0.3601',
+    'Test::More' => '0'
+  },
+  'configure_requires' => {
+    'ExtUtils::MakeMaker' => '6.31',
+    'Module::Build' => '0.3601'
+  },
+  'dist_abstract' => 'Interface with Disqus comments from your Mojolicious app',
+  'dist_author' => [
+    'Ben van Staveren <madcat@cpan.org>'
+  ],
+  'dist_name' => 'Mojolicious-Plugin-Disqus',
+  'dist_version' => '1.20',
+  'license' => 'perl',
+  'module_name' => 'Mojolicious::Plugin::Disqus',
+  'recommends' => {},
+  'recursive_test_files' => 1,
+  'requires' => {
+    'Mojo::Base' => '0',
+    'Net::Disqus' => '0'
+  },
+  'script_files' => []
 );
 
-$builder->create_build_script();
+
+my $build = Module::Build->new(%module_build_args);
+
+$build->create_build_script;
