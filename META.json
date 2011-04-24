@@ -16,13 +16,13 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "Module::Build" : "0.3601"
+            "Module::Build" : "0.38"
          }
       },
       "configure" : {
          "requires" : {
             "ExtUtils::MakeMaker" : "6.31",
-            "Module::Build" : "0.3601"
+            "Module::Build" : "0.38"
          }
       },
       "runtime" : {
@@ -42,13 +42,13 @@
       "bugtracker" : {
          "web" : "https://github.com/benvanstaveren/Mojolicious-Plugin-Disqus/issues"
       },
-      "homepage" : "http://xirinet.com/projects/mojolicious-plugin-disqus/",
+      "homepage" : "http://search.cpan.org/dist/Mojolicious-Plugin-Disqus/",
       "repository" : {
          "type" : "git",
          "url" : "git://github.com/benvanstaveren/Mojolicious-Plugin-Disqus.git",
          "web" : "https://github.com/benvanstaveren/Mojolicious-Plugin-Disqus"
       }
    },
-   "version" : "1.20"
+   "version" : "1.21"
 }
 

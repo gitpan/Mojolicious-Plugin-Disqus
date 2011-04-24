@@ -9,3 +9,4 @@ README
 dist.ini
 lib/Mojolicious/Plugin/Disqus.pm
 t/00-load.t
+t/release-cpan-changes.t

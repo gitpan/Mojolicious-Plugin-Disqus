@@ -2,7 +2,7 @@ use warnings;
 use strict;
 package Mojolicious::Plugin::Disqus;
 BEGIN {
-  $Mojolicious::Plugin::Disqus::VERSION = '1.20';
+  $Mojolicious::Plugin::Disqus::VERSION = '1.21';
 }
 use Mojo::Base 'Mojolicious::Plugin';
 use Net::Disqus;
@@ -18,8 +18,7 @@ sub register {
         Net::Disqus->new(%$args);
     });
     $app->helper(disqus => sub {
-        my $self = shift;
-        $self->_disqus->fetch(@_);
+        $app->_disqus()->fetch(@_);
     });
 }
 
@@ -31,7 +30,7 @@ Mojolicious::Plugin::Disqus - Interface with Disqus comments from your Mojolicio
 
 =head1 VERSION
 
-version 1.20
+version 1.21
 
 =head1 SYNOPSIS
 

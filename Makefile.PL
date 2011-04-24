@@ -12,12 +12,12 @@ my %WriteMakefileArgs = (
   'ABSTRACT' => 'Interface with Disqus comments from your Mojolicious app',
   'AUTHOR' => 'Ben van Staveren <madcat@cpan.org>',
   'BUILD_REQUIRES' => {
-    'Module::Build' => '0.3601',
+    'Module::Build' => '0.38',
     'Test::More' => '0'
   },
   'CONFIGURE_REQUIRES' => {
     'ExtUtils::MakeMaker' => '6.31',
-    'Module::Build' => '0.3601'
+    'Module::Build' => '0.38'
   },
   'DISTNAME' => 'Mojolicious-Plugin-Disqus',
   'EXE_FILES' => [],
@@ -27,7 +27,7 @@ my %WriteMakefileArgs = (
     'Mojo::Base' => '0',
     'Net::Disqus' => '0'
   },
-  'VERSION' => '1.20',
+  'VERSION' => '1.21',
   'test' => {
     'TESTS' => 't/*.t'
   }
