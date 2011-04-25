@@ -2,7 +2,7 @@ use warnings;
 use strict;
 package Mojolicious::Plugin::Disqus;
 BEGIN {
-  $Mojolicious::Plugin::Disqus::VERSION = '1.21';
+  $Mojolicious::Plugin::Disqus::VERSION = '1.22';
 }
 use Mojo::Base 'Mojolicious::Plugin';
 use Net::Disqus;
@@ -14,12 +14,8 @@ sub register {
 
     die __PACKAGE__, ': The "api_secret" argument is required', "\n" unless($args->{api_secret});
 
-    $app->attr(_disqus => sub {
-        Net::Disqus->new(%$args);
-    });
-    $app->helper(disqus => sub {
-        $app->_disqus()->fetch(@_);
-    });
+    $app->attr(_disqus => sub { Net::Disqus->new(%$args); });
+    $app->helper(disqus => sub { return shift->app->_disqus()->fetch(@_); });
 }
 
 1;
@@ -30,7 +26,7 @@ Mojolicious::Plugin::Disqus - Interface with Disqus comments from your Mojolicio
 
 =head1 VERSION
 
-version 1.21
+version 1.22
 
 =head1 SYNOPSIS
 

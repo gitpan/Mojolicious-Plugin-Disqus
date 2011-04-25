@@ -3,7 +3,7 @@ NAME
     Mojolicious app
 
 VERSION
-    version 1.21
+    version 1.22
 
 SYNOPSIS
         use Mojolicious::Plugin::Disqus

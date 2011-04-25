@@ -27,7 +27,7 @@ my %WriteMakefileArgs = (
     'Mojo::Base' => '0',
     'Net::Disqus' => '0'
   },
-  'VERSION' => '1.21',
+  'VERSION' => '1.22',
   'test' => {
     'TESTS' => 't/*.t'
   }

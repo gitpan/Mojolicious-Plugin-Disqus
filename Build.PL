@@ -19,7 +19,7 @@ my %module_build_args = (
     'Ben van Staveren <madcat@cpan.org>'
   ],
   'dist_name' => 'Mojolicious-Plugin-Disqus',
-  'dist_version' => '1.21',
+  'dist_version' => '1.22',
   'license' => 'perl',
   'module_name' => 'Mojolicious::Plugin::Disqus',
   'recommends' => {},

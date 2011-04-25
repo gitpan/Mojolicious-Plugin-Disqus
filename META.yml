@@ -22,4 +22,4 @@ resources:
   bugtracker: https://github.com/benvanstaveren/Mojolicious-Plugin-Disqus/issues
   homepage: http://search.cpan.org/dist/Mojolicious-Plugin-Disqus/
   repository: git://github.com/benvanstaveren/Mojolicious-Plugin-Disqus.git
-version: 1.21
+version: 1.22
